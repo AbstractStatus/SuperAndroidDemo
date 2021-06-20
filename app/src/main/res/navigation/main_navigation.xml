@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainDemoFragment">
+
+    <fragment
+        android:id="@+id/mainDemoFragment"
+        android:name="com.nouser666.superdemo.main.fragment.MainDemoFragment"
+        android:label="fragment_main_demo"
+        tools:layout="@layout/fragment_main_demo" />
+    <fragment
+        android:id="@+id/mainViewFragment"
+        android:name="com.nouser666.superdemo.main.fragment.MainViewFragment"
+        android:label="fragment_main_view"
+        tools:layout="@layout/fragment_main_view" />
+    <fragment
+        android:id="@+id/mainUtilFragment"
+        android:name="com.nouser666.superdemo.main.fragment.MainUtilFragment"
+        android:label="fragment_main_util"
+        tools:layout="@layout/fragment_main_util" />
+    <fragment
+        android:id="@+id/mainPersonFragment"
+        android:name="com.nouser666.superdemo.main.fragment.MainPersonFragment"
+        android:label="fragment_main_person"
+        tools:layout="@layout/fragment_main_person" />
+</navigation>

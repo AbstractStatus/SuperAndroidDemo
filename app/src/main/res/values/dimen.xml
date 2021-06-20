@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_title_top">53dp</dimen>
+    <dimen name="size_title_top_title">20dp</dimen>
+    <dimen name="radius_card_item">16dp</dimen>
+    <dimen name="radius_dialog_common">16dp</dimen>
+</resources>
