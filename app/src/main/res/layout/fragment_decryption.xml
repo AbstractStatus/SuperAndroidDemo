@@ -21,28 +21,19 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="32dp"
+                android:layout_marginBottom="64dp"
                 android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24" />
 
-            <com.nouser666.superdemo.view.button.DefaultButton
-                android:id="@+id/textView2"
+            <include
+                layout="@layout/default_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginBottom="12dp"
-                android:text="TextView"
-                android:textSize="18sp" />
+                android:layout_height="wrap_content" />
 
-            <com.nouser666.superdemo.view.button.DefaultButton
-                android:id="@+id/textView3"
+            <include
+                layout="@layout/default_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginBottom="12dp"
-                android:text="TextView" />
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
     </ScrollView>
 

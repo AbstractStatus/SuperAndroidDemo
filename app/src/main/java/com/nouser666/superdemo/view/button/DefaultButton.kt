@@ -12,7 +12,7 @@ class DefaultButton @JvmOverloads constructor(
     init {
         this.setBackgroundResource(R.drawable.ripple_bg_white)
         this.textSize = 18F
-        this.setPadding(0, 16, 0, 16)
+        this.setPadding(0, 32, 0, 32)
         this.isClickable = true
         this.gravity = Gravity.CENTER
 

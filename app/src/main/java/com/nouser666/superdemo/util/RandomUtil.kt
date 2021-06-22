@@ -3,6 +3,7 @@ package com.nouser666.superdemo.util
 class RandomUtil {
 
     companion object{
+        //获取从整数a到b的随机数，开闭由left和right设置
         fun getRandomIntByRangeInt(a: Int, b: Int, left: Boolean, right: Boolean): Int{
             return if (left){
                 if (right){
