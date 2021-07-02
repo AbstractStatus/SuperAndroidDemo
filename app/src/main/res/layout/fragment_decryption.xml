@@ -24,10 +24,11 @@
                 android:layout_marginBottom="64dp"
                 android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24" />
 
-            <include
-                layout="@layout/default_button"
+            <com.nouser666.superdemo.view.button.DefaultButton
+                android:id="@+id/btn_decryption"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:button_name="解锁" />
 
             <include
                 layout="@layout/default_button"

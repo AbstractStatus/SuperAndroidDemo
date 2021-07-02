@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.nouser666.superdemo.R
+import com.nouser666.superdemo.mainutil.qrencryptionsys.PasswordSys
+import com.nouser666.superdemo.mainutil.qrencryptionsys.QRPasswordCard
+import com.nouser666.superdemo.view.button.DefaultButton
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +25,10 @@ class KeyFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var qrPasswordCard: QRPasswordCard
+    private lateinit var btnGetKey: DefaultButton
+    private lateinit var btnSaveKey: DefaultButton
+    private var key = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +43,30 @@ class KeyFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_key, container, false)
+        val view = inflater.inflate(R.layout.fragment_key, container, false)
+        qrPasswordCard = view.findViewById(R.id.qr_password_card)
+        btnGetKey = view.findViewById(R.id.btn_get_key)
+        btnSaveKey = view.findViewById(R.id.btn_save_key)
+
+        btnGetKey.buttonClick(object : DefaultButton.Callback{
+            override fun callback() {
+                key = PasswordSys.generate()
+                qrPasswordCard.setQRCode(key)
+                qrPasswordCard.setTintImage(R.drawable.qr_lock_key)
+                qrPasswordCard.setTitle("超简示例")
+                qrPasswordCard.setCodeId(key.substring(0, 5))
+            }
+
+        })
+
+        btnSaveKey.buttonClick(object : DefaultButton.Callback{
+            override fun callback() {
+
+            }
+
+        })
+
+        return view
     }
 
     companion object {

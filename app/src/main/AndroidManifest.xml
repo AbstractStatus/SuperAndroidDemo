@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nouser666.superdemo">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SuperDemo">
-        <activity android:name=".mainview.simplewebview.SimpleWebViewActivity"></activity>
+        <activity android:name=".mainview.surfaceview.SurfaceViewActivity"></activity>
+        <activity android:name=".mainutil.qrencryptionsys.EncryptionResultActivity" />
+        <activity android:name=".mainview.simplewebview.SimpleWebViewActivity" />
         <activity android:name=".main.MainOnlyTextActivity" />
         <activity android:name=".mainview.rotatevecview.RotateVecViewActivity" />
         <activity android:name=".mainutil.qrencryptionsys.QREncryptionSysActivity" />

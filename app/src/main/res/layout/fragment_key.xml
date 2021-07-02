@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +12,29 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.nouser666.superdemo.mainutil.qrencryptionsys.QRPasswordCard
+                android:id="@+id/qr_password_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </com.nouser666.superdemo.mainutil.qrencryptionsys.QRPasswordCard>
+
+            <com.nouser666.superdemo.view.button.DefaultButton
+                android:id="@+id/btn_get_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="com.nouser666.superdemo.view.button.DefaultButton"
+                app:button_name="配锁" />
+
+            <com.nouser666.superdemo.view.button.DefaultButton
+                android:id="@+id/btn_save_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="com.nouser666.superdemo.view.button.DefaultButton"
+                app:button_name="存锁" />
+        </LinearLayout>
     </ScrollView>
 </FrameLayout>

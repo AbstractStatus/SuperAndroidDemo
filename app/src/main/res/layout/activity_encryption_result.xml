@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainutil.qrencryptionsys.fragment.EncryptionFragment">
+    tools:context=".mainutil.qrencryptionsys.EncryptionResultActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,23 +15,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <com.nouser666.superdemo.view.edittext.MultiLineEditText
-                android:id="@+id/editTextTextPersonName"
+            <com.nouser666.superdemo.mainutil.qrencryptionsys.QRPasswordCard
+                android:id="@+id/encryption_result_card"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:input_hint="请输入需要加密的文本" />
+                android:layout_height="match_parent">
+
+            </com.nouser666.superdemo.mainutil.qrencryptionsys.QRPasswordCard>
 
             <com.nouser666.superdemo.view.button.DefaultButton
+                android:id="@+id/btn_save_result"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:button_name="选择锁">
-
-            </com.nouser666.superdemo.view.button.DefaultButton>
-
-            <com.nouser666.superdemo.view.button.DefaultButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:button_name="加锁" />
+                app:button_name="保存密件" />
         </LinearLayout>
     </ScrollView>
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,7 +36,4 @@ class TitleBarOnlyBackup @JvmOverloads constructor(
         }
     }
 
-    public fun setText(s: String){
-        textView.text = s
-    }
 }
